@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+<html>
+  <head>
+    <title>Main page</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+      <div class="blue_one" id="button1">Click me</div>
+      <h1 class="center">{{data}}</h1>
+      <img id="shrek" class="center" src="{{url_for('static', filename='image.jpeg')}}" />
+
+
+      <h1>Total club members: <p id="totalMemebers">0</p></h1>
+      <form id="myForm" action="" method="post">
+          Name: <input type="text" name="name" id="name"><br>
+          Age: <input type="text" name="age" id="age"><br>
+          Fav Shrek Character: <input type="text" name="favc" id="favc"><br>
+
+          <input id="submit_button" type="button" name="submit" value="submit">
+      </form>
+      <a href="/list">GO HERE</a>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </body>
+</html>

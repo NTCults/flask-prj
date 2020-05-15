@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <ul>
+            <h2>Shrek lovers list</h2>
+            {% for item in data %}
+            <li> {{ item.name }} {{ item.age }} {{ item.favc }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/">Return</a>
+    </body>
+</html>
